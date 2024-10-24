@@ -31,35 +31,34 @@ After processing the input, the program constructs the Huffman Tree and prints t
 
 Enter the number of characters: 4
 
-Enter character: a
+Enter character: A
 
-Enter frequency: 6
+Enter frequency: 5
 
-Enter character: b
+Enter character: B
 
-Enter frequency: 14
+Enter frequency: 9
 
-Enter character: c
+Enter character: C
 
 Enter frequency: 12
 
-Enter character: d
+Enter character: a
 
-Enter frequency: 28
+Enter frequency: 7
+
 
 ### Output:
 
 Huffman Codes:
 
-d: 0
+b: 00
 
-b: 10
+a: 01
 
-a: 110
+c: 1
 
-c: 111
- 
-All the characters have been set automatically in lower case form. 
+In this example, both 'A' and 'a' are treated as the same character due to case insensitivity, and their frequencies are combined. 
 
 ## Requirements 
 
