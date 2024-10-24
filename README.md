@@ -1,18 +1,26 @@
-# Huffman Coding Tree Assignment
-## Overview
-This project implements a Huffman Coding Tree using Python in Google Colab. The implementation follows a greedy algorithm approach and utilizes a min-heap data structure to construct the tree. Additionally, the program takes user input for characters and their frequencies and handles cases where two or more characters have the same frequency by prioritizing them in alphabetical order. Case sensitivity is ignored, treating uppercase and lowercase characters as the same.
+# Huffman Coding Tree Assignment 
 
-## Features
-* Min-Heap Data Structure: Efficiently builds the Huffman Tree using Python's heapq library.
-* Alphabetical Ordering: In cases where two or more characters have the same frequency, the program ensures alphabetical order is considered.
-* Case Insensitivity: The program treats all characters as lowercase, combining the frequencies of uppercase and lowercase letters.
-* User Input: The user can input pairs of characters (both uppercase and lowercase) and their corresponding frequencies.
-* Huffman Codes: After constructing the Huffman Tree, the program outputs the Huffman code for each character.
-## Instructions
-### 1. User Input:
+## Introduction 
+This exercise demonstrates the creation of a Huffman Coding Tree using Python on Google Colab. The implementation is done according to the steps depicted by the greedy algorithm. It utilizes a tree-building technique through the use of a min-heap. It also solicits user input for character ciphers and their respective frequencies while resolving the situation when two or more characters have the same frequency. In doing so, this it selects the one having automatic priority out of the ones having equal frequencies, which is based on alphabetical order. This program is case insensitive; it means for the program, upper case and lower case are the same. 
 
-The program prompts the user to input the number of characters, then each character (as either upper or lowercase) and its frequency.
-All characters are automatically treated as lowercase.
+The problem features include the following: 
+
+* Min-Heap Data Structure: As the program utilizes Python's heapq library, the it has the efficiency to build the Huffman Tree very quickly.
+
+* Alphabetic Order Progressing: When two or more characters have the same frequency, the program worries about who went first alphabetically.
+
+* Low sensitivity: The program is not sensitive to the case, all the characters will be in lower cases, and the frequencies of the upper case and lower case will be treated as a total.
+
+* User and character input: The program accepts from users, pairs of lower case and upper case characters and their frequencies as input.
+
+* Huffman Codes: After constructing the Huffman Tree, the software program assigns numerical values to the shards making the code tree.
+
+## Instructions 
+
+### 1. User Input:  
+
+Program prompts the user to type in a number of the characters and thereafter each character either in upper or in lower case form and its corresponding frequency. 
+
 ### 2. Output:
 
 After processing the input, the program constructs the Huffman Tree and prints the Huffman code for each character.
@@ -50,33 +58,48 @@ b: 10
 a: 110
 
 c: 111
+ 
+All the characters have been set automatically in lower case form. 
 
-## Requirements
-* Python version 3.x
-* Libraries: heapq, collections (both are part of Python's standard library)
-  
-## Running the Program in Google Colab
-* Open a new Colab notebook.
-* Copy and paste the provided Python code into the notebook.
-* Run the code, and follow the instructions for entering characters and their frequencies.
-  
-## Link to Colab Notebook:
-https://colab.research.google.com/drive/1ybYNxNTu3Tb4QZguajlNf7Xy95j7fBIM#scrollTo=Y_fEaPm6gqZG
+## Requirements 
 
-## How it Works:
-### 1. Min-Heap Construction:
+* Python version 3.x 
 
-The program uses a min-heap to always extract the two smallest frequency characters/nodes.
-The extracted characters are combined into a new node with a frequency equal to their sum.
-This process repeats until a single tree remains, which represents the Huffman Tree.
-### 2. Handling Equal Frequencies:
+* Libraries: heapq, collections (both come included with Python) 
 
-If two characters have the same frequency, the program sorts them alphabetically before combining them in the tree.
+## Running the Program in Google Colab 
 
-### 3. Huffman Code Generation:
+* Start a new Colab notebook 
 
-The final Huffman Tree is traversed to generate binary codes for each character.
+* In the notebook copy and paste the already provided code using python programming language. 
+
+* Execute the code and provide necessary inputs required in the form of the characters and their frequencies. 
+
+## Link to Colab Notebook: 
+
+https://colab.research.google.com/drive/1ybYNxNTu3Tb4QZguajlNf7Xy95j7fBIM#scrollTo=Y_fEaPm6gqZG 
+
+## How it Works: 
+
+### 1. Min-Heap Construction: 
+
+The min-heap characterizes that the program extracts always the two smallest frequency characters/nodes. 
+
+The extracted characters are combined into a new node that possesses a frequency value equal to their sum. 
+
+This process is repeated until only one tree is left standing, representing the Huffman Tree.
+
+### 2. Equal frequency:
+
+In cases where two characters were assigned the same frequency, those characters are sorted alphabetically before combining them in the preceding tree.
+
+### 3. Code generation from the Huffman Tree:
+
+To generate binary codes for the characters, the characters’ codes were generated from the last Huffman tree.
 
 ## Notes:
-The program treats upper and lowercase characters as the same and merges their frequencies.
-The program guarantees alphabetical ordering when frequencies are equal.
+
+The program merges frequencies of upper and lower case characters and treats their occurrences as similar.
+
+When the frequencies are equal, the program ensures the given order.
+
